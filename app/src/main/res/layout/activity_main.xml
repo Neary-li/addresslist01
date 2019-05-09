@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--添加fab按钮-->
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            fab:menu_backgroundColor="#00000000"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="@color/colorPrimary"
+            fab:menu_colorRipple="@color/colorPrimary"
+            fab:menu_fab_label=""
+            fab:menu_labels_colorNormal="#ffffff"
+            fab:menu_labels_colorPressed="#ffffff"
+            fab:menu_labels_colorRipple="#ffffff"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true"
+            fab:menu_labels_textColor="#3a3a3a"
+            fab:menu_shadowColor="#444">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/action_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                fab:fab_label="新增联系人"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="@color/colorPrimary"
+                fab:menu_colorPressed="@color/colorPrimary"
+                fab:menu_colorRipple="@color/colorPrimary"
+
+                fab:menu_shadowColor="#444" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/action_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_library_qrcode_24dp_white"
+                fab:fab_label="扫描二维码"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="@color/colorPrimary"
+                fab:menu_colorPressed="@color/colorPrimary"
+                fab:menu_colorRipple="@color/colorPrimary"
+                fab:menu_shadowColor="#444" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/action_rili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+                fab:fab_label="打开日历"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="@color/colorPrimary"
+                fab:menu_colorPressed="@color/colorPrimary"
+                fab:menu_colorRipple="@color/colorPrimary"
+                fab:menu_shadowColor="#444" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/action_naozhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_access_alarm_black_24dp"
+                fab:fab_label="打开闹钟"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="@color/colorPrimary"
+                fab:menu_colorPressed="@color/colorPrimary"
+                fab:menu_colorRipple="@color/colorPrimary"
+                fab:menu_shadowColor="#444" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/action_net"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_open_in_browser_black_24dp"
+                fab:fab_label="去上网"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="@color/colorPrimary"
+                fab:menu_colorPressed="@color/colorPrimary"
+                fab:menu_colorRipple="@color/colorPrimary"
+                fab:menu_shadowColor="#444" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <com.addresslist.neary.widget.SideBar
+            android:id="@+id/contact_sidebar"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="15dp" />
+    </RelativeLayout>
+</LinearLayout>
