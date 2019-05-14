@@ -144,6 +144,72 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="声音采集:"
+                    android:textColor="#3a3a3a"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/vociebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="声音录制" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="行为采集:"
+                    android:textColor="#3a3a3a"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/videobtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="视频录制" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="指纹采集:"
+                    android:textColor="#3a3a3a"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/figerprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="采集指纹" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
